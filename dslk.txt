@@ -1,0 +1,34 @@
+struct node{
+	int data;									
+	struct node *next;							
+};
+node* makeNode(int x){
+	node *newNode = new node();
+	newNode->data=x;
+	newNode->next=NULL;
+	return newNode;
+}
+void duyet(node* head){							
+	while(head!=NULL){
+		cout<<head->data<<" ";
+		head=head->next;
+	}
+}
+int count(node* head){							
+	int dem=0;
+	while(head!=NULL){
+		dem++;
+		head=head->next;
+	}
+	return dem;
+}
+void pushFront(node**head,int x){						
+	node* newNode = makeNode(x);						
+	newNode->next= *head;								
+	*head= newNode;
+}
+void pushFront2(node *&head,int x){						
+	node* newNode = makeNode(x);						
+	newNode->next= head;								
+	head = newNode;
+}
