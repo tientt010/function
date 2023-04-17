@@ -1,0 +1,49 @@
+long long modulo(long long x){    
+    long long n=mod-2;
+    long long modulo=1;                     
+    while(n!=0){
+        if(n%2==1){
+            modulo=(x*modulo)%mod;   
+        }
+        n/=2;
+        x=(x*x)%mod;
+    }
+    return modulo % mod;
+}
+long long modpow(long long x,long long n){             
+    long long modpow=1;
+    while(n!=0){
+        if(n%2==1){
+            modpow=(x*modpow)%mod;
+        }
+        n/=2;
+        x=(x*x)%mod;  
+    }
+    return modpow%mod;
+}
+
+
+long long powmod(long long x,long long n){
+    long long ans=1;
+    while(n!=0){
+        if(n%2!=0){
+            ans=(ans*x)%mod;
+        }
+        n/=2;
+        x=(x*x)%mod;
+    }
+    return ans%mod;
+}
+
+long long modulo(long long x){
+    long long tmp=mod-2;
+    long long modulo=1;
+    while(tmp!=0){
+        if(tmp%2==1){
+            modulo=(modulo*tmp)%mod;
+        }
+        tmp/=2;
+        x=(x*x)%mod;
+    }
+    return modulo%mod;
+}
