@@ -2,8 +2,17 @@ long long count(long long n,long long p){
     long long m=n/p;
     long long ans=m;
     while(m>=p){
-        cout+=(m/p);
+        ans+=(m/p);
         m/=p;
     }
     return ans;
 }
+
+long long count(long long n,long long p){
+    while(n>=p){
+        n/=p;
+        ans+=n;
+    }
+    return ans;
+}
+dajklfjklfjJ
