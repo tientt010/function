@@ -14,4 +14,9 @@ int check(int x){
         if(x%i==0)return 0;
     }
     return 1;
-}
+}\duaojkldjalksdjla
+,,,/..,/.,dfashdkhasdjha
+afdalksfhkasnfkl
+]afnksjfnklanfkl
+fanjklsnfknlksan
+famsflkasmklf
