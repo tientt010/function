@@ -15,4 +15,3 @@ long long count(long long n,long long p){
     }
     return ans;
 }
-dajklfjklfjJ
